@@ -1,0 +1,6 @@
+set go+=B
+
+map gm :open https://mail.google.com/mail/?shva=1#inbox <return>
+map gr :open https://www.google.com/reader/view/#overview-page <return>
+map gq :open http://web.qq.com <return>
+
