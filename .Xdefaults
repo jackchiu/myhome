@@ -1,0 +1,32 @@
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+Rxvt*font: xft:terminus:size=14
+Rxvt*scrollBar_right: True
+Rxvt*scrollBar:False
+Rxvt*saveLines: 9999
+Rxvt*background: #000000
+Rxvt*foreground: #a8a8a8
+Rxvt*termName: xterm
+Rxvt*inputMethod: ibus
+*color0:      #000000
+*color1:      #9e1828
+*color2:      #aece92
+*color3:      #968a38
+*color4:      #0000a8
+*color5:      #963c59
+*color6:      #418179
+*color7:      #bebebe
+*color8:      #666666
+*color9:      #cf6171
+*color10:     #c5f779
+*color11:     #fff796
+*color12:     #4186be
+*color13:     #cf9ebe
+*color14:     #71bebe
+*color15:     #ffffff
+
+
