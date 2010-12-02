@@ -30,15 +30,19 @@ layouts =
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
+    awful.layout.suit.floating,
 }
 -- }}}
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
-tags = {names = {"terminal", "editor", "www", "other", "dict"}}
+tags = { names = {"terminal", "editor", "www", "other", "freedom"}, layouts = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[5] }}
 for s = 1, screen.count() do
-	tags[s] = awful.tag(tags.names, s, layouts[1])
+	tags[s] = awful.tag(tags.names, s, tags.layouts)
 end
+
+-- tags[1][5].layout = awful.layout.suid.floating
+
 -- }}}
 
 -- {{{ Menu
@@ -283,19 +287,30 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "pinentry" },
       properties = { floating = true } },
-    { rule = { class = "gimp" },
+    { rule = { class = "Stardict" },
       properties = { floating = true } },
     { rule = { class = "feh" },
       properties = { floating = true } },
-    -- Set Firefox to always map on tags number 2 of screen 1.
+
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][3] } },
-    { rule = { class = "VirtualBox" },
+    { rule = { name = "JavaScript Debugger" },
+      properties = { floating = true } },
+
+    { rule = { class = "Mozilla" },
       properties = { tag = tags[1][4] } },
+    { rule = { class = "Gimp" },
+      properties = { floating = true, tag = tags[1][5] } },
+    { rule = { class = "Mysql-workbench-bin" },
+      properties = { tag = tags[1][5] } },
+    { rule = { class = "VirtualBox" },
+      properties = { tag = tags[1][5] } },
     { rule = { class = "URxvt" },
       properties = { tag = tags[1][1] } },
     { rule = { class = "Gvim" },
       properties = { tag = tags[1][2] } },
+    { rule = { class = "Adl" },
+      properties = { tag = tags[1][4] } },
     { rule = { class = "Pidgin" },
       properties = { floating = true } },
 
