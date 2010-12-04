@@ -4,7 +4,7 @@ Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
-Rxvt*font: xft:terminus:size=14
+Rxvt*font: xft:Monaco:size=16
 Rxvt*scrollBar_right: True
 Rxvt*scrollBar:False
 Rxvt*saveLines: 9999

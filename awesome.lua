@@ -36,7 +36,7 @@ layouts =
 
 -- {{{ Tags
 -- Define a tag table which hold all screen tags.
-tags = { names = {"terminal", "editor", "www", "other", "freedom"}, layouts = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[5] }}
+tags = { names = {"freedom", "editor", "www", "other"}, layouts = { layouts[5], layouts[1], layouts[1], layouts[1] }}
 for s = 1, screen.count() do
 	tags[s] = awful.tag(tags.names, s, tags.layouts)
 end
@@ -283,37 +283,14 @@ awful.rules.rules = {
                      focus = true,
                      keys = clientkeys,
                      buttons = clientbuttons } },
-    { rule = { class = "MPlayer" },
-      properties = { floating = true } },
-    { rule = { class = "pinentry" },
-      properties = { floating = true } },
-    { rule = { class = "Stardict" },
-      properties = { floating = true } },
-    { rule = { class = "feh" },
-      properties = { floating = true } },
-
-    { rule = { class = "Firefox" },
-      properties = { tag = tags[1][3] } },
-    { rule = { name = "JavaScript Debugger" },
-      properties = { floating = true } },
-
-    { rule = { class = "Mozilla" },
-      properties = { tag = tags[1][4] } },
-    { rule = { class = "Gimp" },
-      properties = { floating = true, tag = tags[1][5] } },
-    { rule = { class = "Mysql-workbench-bin" },
-      properties = { tag = tags[1][5] } },
-    { rule = { class = "VirtualBox" },
-      properties = { tag = tags[1][5] } },
-    { rule = { class = "URxvt" },
-      properties = { tag = tags[1][1] } },
+    { rule_any =  { class = { "Stardict", "Pidgin", "Mplayer", "Gimp" }, name = { "JavaScript Debugger" }},
+      properties = { floating = true }},
+    { rule_any =  { class = { "Gimp", "Mysql-workbench-bin" }},
+      properties = { tag = tags[1][1] }},
     { rule = { class = "Gvim" },
-      properties = { tag = tags[1][2] } },
-    { rule = { class = "Adl" },
-      properties = { tag = tags[1][4] } },
-    { rule = { class = "Pidgin" },
-      properties = { floating = true } },
-
+      properties = { tag = tags[1][2] }},
+    { rule = { class = "Firefox" },
+      properties = { tag = tags[1][3] }},
 }
 -- }}}
 
