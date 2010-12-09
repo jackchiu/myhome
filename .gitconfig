@@ -1,0 +1,9 @@
+[user]
+	name = Jack Chiu
+	email = jackchiu.org@gmail.com
+
+[alias]
+	st = status
+	ci = commit
+	df = diff
+	lg = log
