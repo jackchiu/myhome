@@ -4,3 +4,4 @@ map gq :open http://web.qq.com <return>
 map gb :open http://jackchiu.org/blog/wp-admin <return>
 map bb :emenu Delicious.Save a new Bookmark...<return>
 
+set editor=gvim\ -f\ --role=vim_blog
