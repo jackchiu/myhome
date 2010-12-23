@@ -14,3 +14,5 @@ export PATH=${PATH}:/home/jack/bin
 alias evolus-pencil=/usr/lib/evolus-pencil-svn/evolus-pencil.sh
 alias workbench=mysql-workbench
 alias r=rails
+
+# this is a comment
