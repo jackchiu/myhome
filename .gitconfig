@@ -7,3 +7,5 @@
 	ci = commit
 	df = diff
 	lg = log
+	cm = commit
+	ck = checkout
