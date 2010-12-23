@@ -291,6 +291,10 @@ awful.rules.rules = {
       properties = { tag = tags[1][2] }},
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][3] }},
+    { rule = { role = "Manager", class = "Firefox" },
+      properties = { floating = true }},
+    { rule = { role = "Preferences", class = "Firefox" },
+      properties = { floating = true }},
 }
 -- }}}
 
