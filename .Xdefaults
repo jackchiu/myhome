@@ -12,6 +12,12 @@ Rxvt*background: #000000
 Rxvt*foreground: #a8a8a8
 Rxvt*termName: xterm
 Rxvt*inputMethod: ibus
+
+Rxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: chrome
+URxvt.colorUL: #86a2be
+
+
 *color0:      #000000
 *color1:      #9e1828
 *color2:      #aece92
