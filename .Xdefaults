@@ -4,7 +4,7 @@ Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
-Rxvt*font: xft:Monaco:size=16
+Rxvt*font: xft:Monaco-14,xft:AR PL New Sung-12
 Rxvt*scrollBar_right: True
 Rxvt*scrollBar:False
 Rxvt*saveLines: 9999
@@ -12,6 +12,8 @@ Rxvt*background: #000000
 Rxvt*foreground: #a8a8a8
 Rxvt*termName: xterm
 Rxvt*inputMethod: ibus
+
+!URxvt.font:xft:Bitstream Vera Sans Mono-12,xft:WenQuanYi Bitmap Song-12
 
 Rxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: chrome
