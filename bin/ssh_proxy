@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -qTfnN -D 7001 csji
