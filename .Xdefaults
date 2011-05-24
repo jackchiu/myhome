@@ -13,12 +13,10 @@ Rxvt*foreground: #a8a8a8
 Rxvt*termName: xterm
 Rxvt*inputMethod: ibus
 
-Rxvt.mouseWheelScrollPage:True
 Rxvt.scrollTtyOutput:False
 Rxvt.scrollTtyKeypress:True
 Rxvt.scrollWithBuffer:True
 
-!URxvt.font:xft:Bitstream Vera Sans Mono-12,xft:WenQuanYi Bitmap Song-12
 
 Rxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: chrome
