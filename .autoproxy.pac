@@ -6,7 +6,11 @@
 function FindProxyForURL(url, host) {
   var PROXY = "SOCKS5 127.0.0.1:7001";
   var DEFAULT = "DIRECT";
+
+  if (/golang\.org/i.test(url)) return PROXY;
   if (/google\.com/i.test(url)) return PROXY;
+  if (/rubyonrails\.org/i.test(url)) return PROXY;
+  if (/github\.com/i.test(url)) return PROXY;
 
   //-- AUTO-GENERATED RULES, DO NOT MODIFY!
   if(/^[\w\-]+:\/+(?!\/)(?:[^\/]+\.)?taitung\-house\.gov\.tw/i.test(url)) return DEFAULT;
